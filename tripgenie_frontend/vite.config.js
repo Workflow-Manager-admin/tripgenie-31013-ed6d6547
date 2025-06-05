@@ -21,7 +21,9 @@ server: {
     usePolling: true,
   },
   allowedHosts: [
-    'vscode-internal-3043-beta.beta01.cloud.kavia.ai', // 👈 Make sure this matches the error message exactly
+    // PUBLIC_INTERFACE
+    // Added to allow requests from the required VSCode cloud host
+    'vscode-internal-3043-beta.beta01.cloud.kavia.ai',
   ],
 },
 });
