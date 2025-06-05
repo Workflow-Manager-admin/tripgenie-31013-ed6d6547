@@ -6,9 +6,24 @@ import reactRefresh from 'eslint-plugin-react-refresh';
 import tseslint from "@typescript-eslint/eslint-plugin";
 import tsParser from "@typescript-eslint/parser";
 
-// Complete ESM-based configuration for both JS and TS
+// ESLint 9+ ignore files migration: add here, not .eslintignore!
 export default [
-  { ignores: ['dist', 'node_modules/**', 'build/', 'dist/', '*.log', '*.tmp', '*.tsbuildinfo', 'coverage/', '.vscode/', '.idea/', '*.config.mjs'] },
+  {
+    ignores: [
+      'dist',
+      'node_modules/**',
+      'build/',
+      '*.log',
+      '*.tmp',
+      '*.tsbuildinfo',
+      'coverage/',
+      '.vscode/',
+      '.idea/',
+      '*.config.mjs',
+      'postcss.config.js',
+      'tailwind.config.js'
+    ]
+  },
   {
     files: ['**/*.ts', '**/*.tsx'],
     languageOptions: {
