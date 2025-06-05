@@ -27,6 +27,7 @@ export default defineConfig({
     },
     allowedHosts: [
       'vscode-internal-3043-beta.beta01.cloud.kavia.ai',
+      "vscode-internal-3043-beta.beta01.cloud.kavia.ai"
     ],
   },
 });
