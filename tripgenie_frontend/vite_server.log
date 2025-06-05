@@ -2,17 +2,9 @@
 > vite@0.0.0 dev
 > vite dev --host 0.0.0.0 --port 3000
 
-
-  VITE v6.2.5  ready in 216 ms
-
-  ➜  Local:   http://localhost:3000/
-  ➜  Network: http://172.17.0.2:3000/
-8:58:36 AM [vite] vite.config.js changed, restarting server...
-8:58:36 AM [vite] server restarted.
-9:01:30 AM [vite] (client) page reload src/counter.js
-9:01:38 AM [vite] (client) page reload src/javascript.svg
-9:01:54 AM [vite] (client) page reload src/main.js
-9:02:01 AM [vite] (client) hmr update /src/style.css
-9:13:39 AM [vite] Pre-transform error: Failed to load url /src/main.js (resolved id: /home/kavia/workspace/code-generation/tripgenie-31013-ed6d6547/tripgenie_frontend/src/main.js). Does the file exist?
-9:13:39 AM [vite] Pre-transform error: Failed to load url /src/main.js (resolved id: /home/kavia/workspace/code-generation/tripgenie-31013-ed6d6547/tripgenie_frontend/src/main.js). Does the file exist?
-9:13:40 AM [vite] Pre-transform error: Failed to load url /src/main.js (resolved id: /home/kavia/workspace/code-generation/tripgenie-31013-ed6d6547/tripgenie_frontend/src/main.js). Does the file exist?
+error when starting dev server:
+Error: Port 3000 is already in use
+    at Server.onError (file:///home/kavia/workspace/code-generation/tripgenie-31013-ed6d6547/tripgenie_frontend/node_modules/vite/dist/node/chunks/dep-DBxKXgDP.js:25023:18)
+    at Server.emit (node:events:517:28)
+    at emitErrorNT (node:net:1838:8)
+    at process.processTicksAndRejections (node:internal/process/task_queues:82:21)
