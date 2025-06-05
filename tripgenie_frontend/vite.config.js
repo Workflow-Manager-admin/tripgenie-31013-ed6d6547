@@ -3,8 +3,7 @@ import react from '@vitejs/plugin-react';
 import path from 'path';
 import { fileURLToPath } from 'url';
 
-// PUBLIC_INTERFACE
-// ESM-compatible __dirname resolution:
+// ESM-compatible __dirname resolution
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -16,9 +15,9 @@ export default defineConfig({
     },
   },
   server: {
-    host: true,
+    host: true, // listen on all addresses, needed for remote access
     port: 3000,
-    strictPort: true,
+    strictPort: true, // fail if port is busy
     cors: true,
     headers: {
       'Access-Control-Allow-Origin': '*',
@@ -27,8 +26,6 @@ export default defineConfig({
       usePolling: true,
     },
     allowedHosts: [
-      // PUBLIC_INTERFACE
-      // Added to allow requests from the required VSCode cloud host
       'vscode-internal-3043-beta.beta01.cloud.kavia.ai',
     ],
   },
