@@ -1,0 +1,4 @@
+{
+    "command": "npm run build",
+    "working_directory": "/home/kavia/workspace/code-generation/tripgenie-31013-ed6d6547/tripgenie_frontend"
+}
