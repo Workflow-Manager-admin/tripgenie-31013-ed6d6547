@@ -26,7 +26,7 @@ import {
 const Navbar = () => {
   const user = JSON.parse(localStorage.getItem("user"));
   const { openDialog, setOpenDailog, navigate, login } = useGetUserData();
-  const {theme, setTheme} = useContext(ThemeContext);
+  const {theme} = useContext(ThemeContext);
 
   return (
     <div className={ `flex justify-between py-4 px-10 shadow-lg ${theme ? `bg-black text-white`: `bg-white text-black`}`}>

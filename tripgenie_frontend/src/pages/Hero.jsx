@@ -10,8 +10,7 @@ import ThemeContext from "../context/ThemeContext";
 
 const Hero = () => {
 
-  const {theme} = useContext(ThemeContext);
-
+  useContext(ThemeContext);
 
   return (
     <div className="mt-10 pt-4 lg:px-0 px-8">
