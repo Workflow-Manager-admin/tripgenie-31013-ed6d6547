@@ -106,4 +106,30 @@ const TripPdf = ({ trip }) => {
   );
 };
 
+TripPdf.propTypes = {
+  trip: PropTypes.shape({
+    userSelection: PropTypes.shape({
+      noOfDays: PropTypes.oneOfType([PropTypes.string, PropTypes.number]),
+      location: PropTypes.shape({
+        label: PropTypes.string,
+      }),
+    }),
+    tripData: PropTypes.shape({
+      itinerary: PropTypes.arrayOf(
+        PropTypes.shape({
+          day: PropTypes.number,
+          plan: PropTypes.arrayOf(
+            PropTypes.shape({
+              placeName: PropTypes.string,
+              placeDetails: PropTypes.string,
+              ticketPricing: PropTypes.string,
+              timeTravel: PropTypes.string,
+            })
+          ),
+        })
+      ),
+    }),
+  }),
+};
+
 export default TripPdf;
