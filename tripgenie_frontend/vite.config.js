@@ -21,6 +21,8 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
-    // ❌ Do NOT include allowedHosts here — it's not valid for Vite!
+    allowedHosts: [
+      'vscode-internal-3043-beta.beta01.cloud.kavia.ai'
+    ],
   },
 })
