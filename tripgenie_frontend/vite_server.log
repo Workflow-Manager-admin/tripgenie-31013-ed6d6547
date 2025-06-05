@@ -7,3 +7,12 @@
 
   ➜  Local:   http://localhost:3000/
   ➜  Network: http://172.17.0.2:3000/
+8:58:36 AM [vite] vite.config.js changed, restarting server...
+8:58:36 AM [vite] server restarted.
+9:01:30 AM [vite] (client) page reload src/counter.js
+9:01:38 AM [vite] (client) page reload src/javascript.svg
+9:01:54 AM [vite] (client) page reload src/main.js
+9:02:01 AM [vite] (client) hmr update /src/style.css
+9:13:39 AM [vite] Pre-transform error: Failed to load url /src/main.js (resolved id: /home/kavia/workspace/code-generation/tripgenie-31013-ed6d6547/tripgenie_frontend/src/main.js). Does the file exist?
+9:13:39 AM [vite] Pre-transform error: Failed to load url /src/main.js (resolved id: /home/kavia/workspace/code-generation/tripgenie-31013-ed6d6547/tripgenie_frontend/src/main.js). Does the file exist?
+9:13:40 AM [vite] Pre-transform error: Failed to load url /src/main.js (resolved id: /home/kavia/workspace/code-generation/tripgenie-31013-ed6d6547/tripgenie_frontend/src/main.js). Does the file exist?
