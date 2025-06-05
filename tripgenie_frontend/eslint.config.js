@@ -1,9 +1,11 @@
+/* eslint-disable no-undef */
 const js = require('@eslint/js');
 const globals = require('globals');
 const react = require('eslint-plugin-react');
 const reactHooks = require('eslint-plugin-react-hooks');
 const reactRefresh = require('eslint-plugin-react-refresh');
 
+/* eslint-disable no-undef */
 module.exports = [
   { ignores: ['dist'] },
   {
