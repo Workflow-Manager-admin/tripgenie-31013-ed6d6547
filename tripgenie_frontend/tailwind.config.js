@@ -1,4 +1,5 @@
 // tailwind.config.js
+/* eslint-env node */
 const tailwindcssAnimate = require('tailwindcss-animate');
 
 /** @type {import('tailwindcss').Config} */
