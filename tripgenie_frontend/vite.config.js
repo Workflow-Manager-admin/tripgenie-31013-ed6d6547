@@ -1,17 +1,16 @@
-import { defineConfig } from 'vite'
-import react from '@vitejs/plugin-react'
-import path from 'path'
+import { defineConfig } from 'vite';
+import tailwindcss from '@tailwindcss/vite'
+import path from 'path';
 
 export default defineConfig({
-  // Only @vitejs/plugin-react should be included for plugins.
-  plugins: [react()],
+  plugins: [react(),tailwindcss(),],
   resolve: {
     alias: {
       '@': path.resolve(new URL('./src', import.meta.url).pathname),
     },
   },
   server: {
-    host: true, // ✅ allows access from any hostname
+    host: true,
     port: 3000,
     strictPort: true,
     cors: true,
@@ -22,7 +21,7 @@ export default defineConfig({
       usePolling: true,
     },
     allowedHosts: [
-      'vscode-internal-3043-beta.beta01.cloud.kavia.ai'
+      'vscode-internal-3043-beta.beta01.cloud.kavia.ai',
     ],
   },
-})
+});
