@@ -4,6 +4,7 @@ import path from 'path';
 
 export default defineConfig({
   plugins: [react()],
+  // Vite will auto-detect postcss.config.js in project root. No need to specify 'css.postcss'.
   resolve: {
     alias: {
       '@': path.resolve(new URL('./src', import.meta.url).pathname),
