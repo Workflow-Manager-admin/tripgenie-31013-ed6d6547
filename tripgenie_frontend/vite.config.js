@@ -11,7 +11,7 @@ export default defineConfig({
     },
   },
   server: {
-    host: '0.0.0.0',
+    host: true, // ✅ allows access from any hostname
     port: 3000,
     strictPort: true,
     cors: true,
@@ -21,6 +21,6 @@ export default defineConfig({
     watch: {
       usePolling: true,
     },
-    allowedHosts: ['vscode-internal-3043-beta.beta01.cloud.kavia.ai'], // 👈 fix is here
+    // ❌ Do NOT include allowedHosts here — it's not valid for Vite!
   },
 })
