@@ -16,7 +16,7 @@ export default defineConfig({
   },
   server: {
     host: true, // listen on all addresses, needed for remote access
-    port: 3000,
+    port: 5000,
     strictPort: true, // fail if port is busy
     cors: true,
     headers: {
@@ -27,6 +27,7 @@ export default defineConfig({
     },
     allowedHosts: [
       'vscode-internal-3043-beta.beta01.cloud.kavia.ai',
+      "vscode-internal-3043-beta.beta01.cloud.kavia.ai"
     ],
   },
 });
