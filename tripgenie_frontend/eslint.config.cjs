@@ -1,4 +1,4 @@
-/* eslint-disable no-undef */
+ /* eslint-disable no-undef */
 const js = require('@eslint/js');
 const globals = require('globals');
 const react = require('eslint-plugin-react');
