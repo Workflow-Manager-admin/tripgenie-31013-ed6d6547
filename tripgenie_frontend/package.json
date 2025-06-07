@@ -1,12 +1,12 @@
 {
   "name": "travelplanner",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
+    "dev": "vite --host",
     "build": "vite build",
-    "lint": "eslint .",
+    "lint": "eslint . --ext .js,.jsx",
     "preview": "vite preview"
   },
   "dependencies": {
