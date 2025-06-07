@@ -3,14 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- All asset links should be absolute (start with "/") for correct Vite dev/prod resolution.
+         Favicon & script below are correct; do not use "public/", "src/", or "./" for root-level assets. -->
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
-    <!-- To ensure favicon loads (and remove double slashes and misuse of public/src paths) -->
 
     <title>Vistara: Best AI Travel Palnner 2025</title>
   </head>
   <body>
     <div id="root"></div>
+    <!-- Vite injects its client & your entry script here. This is correct: -->
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>

@@ -20,8 +20,16 @@ import { fileURLToPath } from 'url';
 // ESM-compatible __dirname
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 
+/**
+ * Patch: Ensure Vite "base" config is correct for dev/prod.
+ * If you intend to deploy to a subdirectory or custom domain, update 'base' accordingly.
+ * For most React SPAs with Vercel/Netlify/static hosting, base should be "/" (default).
+ * No "root" misconfiguration present (defaults to project root). No "public/src" path issues found.
+ */
+
 export default defineConfig({
   plugins: [react()],
+  base: "/", // Ensures all asset/script URLs are absolute from server root; prevents 404s on /@vite/client & /src/main.jsx
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "src"),
