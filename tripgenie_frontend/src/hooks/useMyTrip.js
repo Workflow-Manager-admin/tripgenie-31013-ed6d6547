@@ -6,7 +6,8 @@ const useMyTrip = () => {
     const [userTrips, setUsertrips] = useState([]);
     useEffect(() => {
       GetUserTrips();
-    }, []);
+      // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [GetUserTrips]);
     const navigate = useNavigate();
   
     /**

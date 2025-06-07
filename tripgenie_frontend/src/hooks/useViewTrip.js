@@ -19,7 +19,8 @@ const useViewTrip = () => {
   };
   useEffect(() => {
     tripId && getData(tripId);
-  }, [tripId]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [tripId, getData]);
 
   return { trip };
 };

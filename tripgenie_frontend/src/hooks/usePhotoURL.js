@@ -9,13 +9,24 @@ export const usePlacePhoto = (trip,data) => {
     if (trip) {
       GetPlacePhoto();
     }
-  }, [trip]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [trip, GetPlacePhoto]);
 
   const GetPlacePhoto = async () => {
-   
     await GetPlaceDetail(data).then((res) => {
-      const photoUrl = PHOTO_REF_URL.replace("{NAME}", res?.data?.places[0]?.photos[1]?.name);
-      setPhotoURL(photoUrl);
+      const photosArr = res?.data?.places?.[0]?.photos;
+      // Use first available photo or undefined if not present
+      const photoRefObj = Array.isArray(photosArr) && photosArr.length > 0
+        ? photosArr[0]
+        : undefined;
+      if (photoRefObj && photoRefObj.name) {
+        const photoUrl = PHOTO_REF_URL.replace("{NAME}", photoRefObj.name);
+        setPhotoURL(photoUrl);
+      } else {
+        setPhotoURL(undefined); // fallback: allows placeholder to show
+      }
+    }).catch(() => {
+      setPhotoURL(undefined);
     });
   };
 
