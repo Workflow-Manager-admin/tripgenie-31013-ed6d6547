@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Fire-inspired light theme */
+    --background: 0 0% 100%; /* White */
+    --foreground: 0 0% 10%; /* Almost black */
+    
+    --card: 0 0% 100%; /* White */
+    --card-foreground: 0 0% 10%; /* Almost black */
+    
+    --popover: 0 0% 100%; /* White */
+    --popover-foreground: 0 0% 10%; /* Almost black */
+    
+    /* Primary - Deep red/orange */
+    --primary: 10 80% 50%; /* Vibrant orange-red */
+    --primary-foreground: 0 0% 100%; /* White */
+    
+    /* Secondary - Lighter orange */
+    --secondary: 20 80% 70%; /* Light orange */
+    --secondary-foreground: 0 0% 10%; /* Almost black */
+    
+    /* Muted - Warm gray */
+    --muted: 10 10% 95%; /* Very light warm gray */
+    --muted-foreground: 10 5% 45%; /* Medium warm gray */
+    
+    /* Accent - Yellow-orange */
+    --accent: 30 90% 60%; /* Bright orange */
+    --accent-foreground: 0 0% 10%; /* Almost black */
+    
+    /* Destructive - Deep red */
+    --destructive: 0 80% 50%; /* Strong red */
+    --destructive-foreground: 0 0% 100%; /* White */
+    
+    --border: 10 10% 90%; /* Light warm gray */
+    --input: 10 10% 90%; /* Light warm gray */
+    --ring: 10 80% 50%; /* Matching primary */
+    
+    /* Fire-themed chart colors */
+    --chart-1: 10 80% 50%;  /* Primary red-orange */
+    --chart-2: 20 90% 60%;  /* Bright orange */
+    --chart-3: 40 90% 60%;  /* Yellow-orange */
+    --chart-4: 10 70% 40%;  /* Darker red */
+    --chart-5: 0 80% 40%;   /* Deep red */
+    
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Fire-inspired dark theme */
+    --background: 0 0% 5%; /* Very dark (almost black) */
+    --foreground: 0 0% 90%; /* Off-white */
+    
+    --card: 0 0% 8%; /* Slightly lighter than background */
+    --card-foreground: 0 0% 90%; /* Off-white */
+    
+    --popover: 0 0% 8%; /* Slightly lighter than background */
+    --popover-foreground: 0 0% 90%; /* Off-white */
+    
+    /* Primary - Vibrant orange */
+    --primary: 20 90% 60%; /* Bright orange */
+    --primary-foreground: 0 0% 5%; /* Very dark */
+    
+    /* Secondary - Deep red */
+    --secondary: 10 80% 40%; /* Dark red-orange */
+    --secondary-foreground: 0 0% 90%; /* Off-white */
+    
+    /* Muted - Dark warm gray */
+    --muted: 10 10% 15%; /* Dark warm gray */
+    --muted-foreground: 10 10% 65%; /* Medium warm gray */
+    
+    /* Accent - Yellow-orange */
+    --accent: 30 90% 60%; /* Bright orange-yellow */
+    --accent-foreground: 0 0% 5%; /* Very dark */
+    
+    /* Destructive - Deep red */
+    --destructive: 0 80% 45%; /* Strong red */
+    --destructive-foreground: 0 0% 90%; /* Off-white */
+    
+    --border: 10 10% 20%; /* Dark warm gray */
+    --input: 10 10% 20%; /* Dark warm gray */
+    --ring: 20 90% 60%; /* Matching primary */
+    
+    /* Fire-themed chart colors for dark mode */
+    --chart-1: 20 90% 60%;  /* Bright orange */
+    --chart-2: 10 80% 50%;  /* Red-orange */
+    --chart-3: 30 90% 60%;  /* Yellow-orange */
+    --chart-4: 0 80% 45%;   /* Deep red */
+    --chart-5: 40 90% 65%;  /* Light yellow-orange */
+    --background: 15 100% 10%;
+    --foreground: 0 0% 98%;
+    --primary: 18 95% 50%;
+    --primary-foreground: 0 0% 100%;
+    --accent: 0 0% 20%;
+    --accent-foreground: 0 0% 100%;
+    --muted: 0 0% 35%;
+
+  }
+  /* Geoapify Autocomplete Custom Styling */
+
+.geocoder-container {
+  border: none !important;
+  box-shadow: none !important;
+  background-color: white !important;
+  border-radius: 0.5rem !important;
+  font-size: 1rem !important;
+  color: black !important;
+}
+
+.geocoder__input {
+  padding: 0.5rem !important;
+  border-radius: 0.5rem !important;
+  background-color: transparent !important;
+}
+
+.dark .geocoder-container {
+  background-color: #1c1c1c !important;
+  color: white !important;
+}
+
+body {
+  @apply bg-background text-foreground;
+}
+
+
+}
+
+@layer base {
+  * {
+    @apply border-border;
+    
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Tailwind-friendly overrides for Geoapify */
+.geocoder-container {
+  @apply w-full bg-white dark:bg-[#1c1c1c] text-gray-900 dark:text-white border border-gray-300 dark:border-gray-700 rounded-md !important;
+}
+
+.geocoder__input {
+  @apply p-2 rounded-md w-full bg-transparent text-base placeholder:text-gray-500 dark:placeholder:text-gray-400 !important;
+}
+
+.geocoder__suggestions {
+  @apply bg-white dark:bg-[#1c1c1c] border border-gray-200 dark:border-gray-700 rounded-md shadow-lg mt-1 text-sm !important;
+}
+
+.geocoder__suggestion {
+  @apply px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 cursor-pointer !important;
+}
+.geocoder__suggestion--active {
+  @apply bg-gray-200 dark:bg-gray-700 !important;
+}
+.geocoder__suggestion__text {
+  @apply text-gray-900 dark:text-white !important;
+}
+.geocoder__suggestion__icon {
+  @apply text-gray-500 dark:text-gray-400 !important;
+}
+.geocoder__suggestion__icon--active {
+  @apply text-gray-900 dark:text-white !important;
+}
+.geocoder__suggestion__address {
+  @apply text-gray-700 dark:text-gray-300 !important;
+}
+.geocoder__suggestion__address--active {
+  @apply text-gray-900 dark:text-white !important;
+}
+.geocoder__suggestion__details {
+  @apply text-gray-600 dark:text-gray-400 !important;
+}
+.geocoder__suggestion__details--active {
+  @apply text-gray-900 dark:text-white !important;
+}
