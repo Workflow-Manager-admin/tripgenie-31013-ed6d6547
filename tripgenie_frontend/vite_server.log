@@ -1,0 +1,30 @@
+
+> travelplanner@0.0.0 dev
+> vite --port 3000
+
+
+  VITE v5.4.7  ready in 408 ms
+
+  ➜  Local:   http://localhost:3000/
+  ➜  Network: http://172.17.0.2:3000/
+9:15:16 AM [vite] hmr update /src/pages/ViewTrip.jsx, /src/index.css
+9:15:16 AM [vite] hmr update /src/pages/Testimonials.jsx, /src/index.css
+9:15:17 AM [vite] hmr update /src/pages/MyTrips.jsx, /src/index.css
+9:15:19 AM [vite] hmr update /src/pages/Hero.jsx, /src/index.css
+9:15:19 AM [vite] hmr update /src/pages/CreateTrip.jsx, /src/index.css
+9:15:19 AM [vite] hmr update /src/pages/About.jsx, /src/index.css
+9:15:20 AM [vite] hmr update /src/pages/ViewTrip.jsx
+9:15:20 AM [vite] hmr update /src/pages/Testimonials.jsx
+9:15:20 AM [vite] hmr update /src/pages/MyTrips.jsx
+9:15:21 AM [vite] hmr update /src/pages/Hero.jsx
+9:15:21 AM [vite] hmr update /src/pages/CreateTrip.jsx
+9:15:21 AM [vite] hmr update /src/pages/About.jsx
+9:16:19 AM [vite] page reload src/main.jsx
+9:16:20 AM [vite] hmr update /src/index.css
+9:16:20 AM [vite] hmr update /src/App.jsx
+9:16:20 AM [vite] Pre-transform error: Failed to load url /src/main.jsx (resolved id: /home/kavia/workspace/code-generation/tripmosaic-31218-ac0cc034/tripmosaic_frontend/src/main.jsx). Does the file exist?
+9:16:20 AM [vite] page reload src/main.jsx
+9:16:20 AM [vite] page reload src/main.jsx
+9:16:21 AM [vite] page reload src/main.jsx
+9:16:22 AM [vite] hmr update /src/App.jsx
+9:16:22 AM [vite] hmr update /src/index.css
